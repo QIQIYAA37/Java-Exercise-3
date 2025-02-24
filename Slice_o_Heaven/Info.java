@@ -7,13 +7,13 @@ public class Info {
     private String storePhone;
     private String storeMenu;
     private String pizzaIngredients;
-    private int pizzaPrice;
+    private double pizzaPrice;
     private String sides;
     private String drinks;
     private int orderID;
-    private int oederTotal;
+    private double oederTotal;
 
-    public Info(String name, String address, String email, String phone, String menu, String ingredients, int price, String side, String drink, int orderID, int orderTotal) {
+    public Info(String name, String address, String email, String phone, String menu, String ingredients, double price, String side, String drink, int orderID, double orderTotal) {
         this.storeName = name;
         this.storeAddress = address;
         this.storeEmail = email;
@@ -51,7 +51,7 @@ public class Info {
         return pizzaIngredients;
     }
 
-    public int getPizzaPrice() {
+    public double getPizzaPrice() {
         return pizzaPrice;
     }
 
@@ -67,11 +67,11 @@ public class Info {
         return orderID;
     }
 
-    public int getOederTotal() {
+    public double getOederTotal() {
         return oederTotal;
     }
 
-    public void takeOrder(String storeMenu, String pizzaIngredients, int pizzaPrice, String sides, String drinks) {
+    public void takeOrder(String storeMenu, String pizzaIngredients, double pizzaPrice, String sides, String drinks) {
         System.out.println("Order taken for " + storeMenu);
         System.out.println("Pizza Ingredients: " + pizzaIngredients);
         System.out.println("Pizza Price: " + pizzaPrice);
@@ -83,7 +83,7 @@ public class Info {
         System.out.println("Making pizza with " + pizzaIngredients);
     }
 
-    public void printReceipt(String storeName, String storeAddress, String storePhone, String storeEmail, int orderID, int orderTotal) {
+    public void printReceipt(String storeName, String storeAddress, String storePhone, String storeEmail, int orderID, double orderTotal) {
         System.out.println("********RECEIPT********");
         System.out.println("Store Name: " + storeName);
         System.out.println("Store Address: " + storeAddress);
