@@ -77,6 +77,13 @@ public class Info {
         System.out.println("Pizza Price: " + pizzaPrice);
         System.out.println("Sides: " + sides);
         System.out.println("Drinks: " + drinks);
+        getStoreName();
+        getStoreAddress();
+        getStoreEmail();
+        getStorePhone();
+        getOrderID();
+        getOederTotal();
+        printReceipt(storeName, storeAddress, storePhone, storeEmail, orderID, oederTotal);
     }
     
     public void makePizza(String pizzaIngredients) {

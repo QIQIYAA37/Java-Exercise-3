@@ -8,7 +8,5 @@ public class Main{
         info.takeOrder(info.getStoreMenu(), info.getPizzaIngredients(), info.getPizzaPrice(), info.getSides(), info.getDrinks());
         System.out.println("Making Pizza");
         info.makePizza(info.getPizzaIngredients());
-        System.out.println("Printing Receipt");
-        info.printReceipt(info.getStoreName(), info.getStoreAddress(), info.getStorePhone(), info.getStoreEmail(), info.getOrderID(), info.getOederTotal());
     }
 }
