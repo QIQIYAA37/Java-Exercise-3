@@ -84,6 +84,7 @@ public class Info {
     }
 
     public void printReceipt(String storeName, String storeAddress, String storePhone, String storeEmail, int orderID, int orderTotal) {
+        System.out.println("********RECEIPT********");
         System.out.println("Store Name: " + storeName);
         System.out.println("Store Address: " + storeAddress);
         System.out.println("Store Phone: " + storePhone);
