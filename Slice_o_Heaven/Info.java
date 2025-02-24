@@ -90,7 +90,7 @@ public class Info {
         System.out.println("Making pizza with " + pizzaIngredients);
     }
 
-    public void printReceipt(String storeName, String storeAddress, String storePhone, String storeEmail, int orderID, double orderTotal) {
+    private void printReceipt(String storeName, String storeAddress, String storePhone, String storeEmail, int orderID, double orderTotal) {
         System.out.println("********RECEIPT********");
         System.out.println("Store Name: " + storeName);
         System.out.println("Store Address: " + storeAddress);
